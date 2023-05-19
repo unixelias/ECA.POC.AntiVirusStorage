@@ -43,7 +43,9 @@ namespace ECA.POC.AntiVirusStorage.Controllers
                 using var streamArquivo = new MemoryStream(bytes);
                 using StreamContent conteudo = new(streamArquivo);
 
-                var respostaEnvio = await _blobEspecificaRepositorio.EnviarArquivo(conteudo.ReadAsStream(), arquivo.NomeArquivo);
+                _logger.LogInformation("Enviando arquivo ao Blob Conteiner");
+                _ = await _blobEspecificaRepositorio.EnviarArquivo(conteudo.ReadAsStream(), arquivo.NomeArquivo);
+                _logger.LogInformation("Aguardando análise do anti vírus");
                 await Task.Delay(10000);
                 Response<GetBlobTagResult> metadadosArquivoBlob = await _blobEspecificaRepositorio.ObterMetadadosArquivo(arquivo.NomeArquivo);
 
@@ -54,11 +56,13 @@ namespace ECA.POC.AntiVirusStorage.Controllers
                         return Created(arquivo.NomeArquivo, metadadosArquivoBlob.Value.Tags);
                     }
                 }
+                _logger.LogError("Arquivo comprometido");
                 await _blobEspecificaRepositorio.DeletarArquivo(arquivo.NomeArquivo);
                 return BadRequest(metadadosArquivoBlob.Value.Tags);
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Mensagem de erro: {mensagem}", ex.Message);
                 await _blobEspecificaRepositorio.DeletarArquivo(arquivo.NomeArquivo);
                 return InternalServerError(ex);
             }
