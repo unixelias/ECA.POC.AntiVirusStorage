@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.16.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECA.POC.AntiVirusStorage.Exception\ECA.POC.AntiVirusStorage.Excecao.csproj" />
+    <ProjectReference Include="..\ECA.POC.AntiVirusStorage.Interface.Repositorio\ECA.POC.AntiVirusStorage.Interface.Repositorio.csproj" />
+    <ProjectReference Include="..\ECA.POC.AntiVirusStorage.Util\ECA.POC.AntiVirusStorage.Util.csproj" />
+  </ItemGroup>
+
+</Project>

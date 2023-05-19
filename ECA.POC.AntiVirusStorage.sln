@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECA.POC.AntiVirusStorage", "ECA.POC.AntiVirusStorage\ECA.POC.AntiVirusStorage.csproj", "{91F52DA3-4034-4B55-829E-9F26B9A34DF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECA.POC.AntiVirusStorage.Util", "ECA.POC.AntiVirusStorage.Util\ECA.POC.AntiVirusStorage.Util.csproj", "{B81E1D55-BCCF-4B29-A072-933C2742EE36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECA.POC.AntiVirusStorage.Repositorio", "ECA.POC.AntiVirusStorage.Repositorio\ECA.POC.AntiVirusStorage.Repositorio.csproj", "{C009631C-8369-45A5-8D31-A366D8876941}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECA.POC.AntiVirusStorage.Interface.Repositorio", "ECA.POC.AntiVirusStorage.Interface.Repositorio\ECA.POC.AntiVirusStorage.Interface.Repositorio.csproj", "{78F9CF62-E87E-46C4-838A-1DC9FF22A47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECA.POC.AntiVirusStorage.Excecao", "ECA.POC.AntiVirusStorage.Exception\ECA.POC.AntiVirusStorage.Excecao.csproj", "{894CEEF4-725D-44AF-8945-9DC2894C8B30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91F52DA3-4034-4B55-829E-9F26B9A34DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F52DA3-4034-4B55-829E-9F26B9A34DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F52DA3-4034-4B55-829E-9F26B9A34DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F52DA3-4034-4B55-829E-9F26B9A34DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81E1D55-BCCF-4B29-A072-933C2742EE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81E1D55-BCCF-4B29-A072-933C2742EE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81E1D55-BCCF-4B29-A072-933C2742EE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81E1D55-BCCF-4B29-A072-933C2742EE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C009631C-8369-45A5-8D31-A366D8876941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C009631C-8369-45A5-8D31-A366D8876941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C009631C-8369-45A5-8D31-A366D8876941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C009631C-8369-45A5-8D31-A366D8876941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F9CF62-E87E-46C4-838A-1DC9FF22A47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F9CF62-E87E-46C4-838A-1DC9FF22A47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F9CF62-E87E-46C4-838A-1DC9FF22A47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F9CF62-E87E-46C4-838A-1DC9FF22A47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894CEEF4-725D-44AF-8945-9DC2894C8B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894CEEF4-725D-44AF-8945-9DC2894C8B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894CEEF4-725D-44AF-8945-9DC2894C8B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894CEEF4-725D-44AF-8945-9DC2894C8B30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF27BC78-1EE5-471B-8CDE-320AD560B591}
+	EndGlobalSection
+EndGlobal
